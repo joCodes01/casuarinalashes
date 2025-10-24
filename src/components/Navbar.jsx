@@ -15,7 +15,7 @@ export function Navbar() {
     return(
         <div style={styleNavBar}>
             <div>
-                <img src="src/assets/CasuarinaLashesLogo.png" alt="business logo" width="170px"/>
+                <img src="/src/assets/CasuarinaLashesLogo.png" alt="business logo" width="170px"/>
             </div>
             <nav className='navbar'>
                 <NavLink to='/'>Home</NavLink>
