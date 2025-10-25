@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import logo from '/src/assets/CasuarinaLashesLogo.png'
 
 const styleNavBar = {
   backgroundColor: 'var(--cl-lightest)',
@@ -15,7 +16,7 @@ export function Navbar() {
     return(
         <div style={styleNavBar}>
             <div>
-                <img src="/src/assets/CasuarinaLashesLogo.png" alt="business logo" width="170px"/>
+                <img src={logo} alt="business logo" width="170px"/>
             </div>
             <nav className='navbar'>
                 <NavLink to='/'>Home</NavLink>
