@@ -4,10 +4,10 @@ import React from 'react'
 export function Home() {
 
    return(
-            <div className="routerPage">
+            <main className="routerPage">
                 <p>Home page</p>
                 <h1>Joanna Wand</h1>
-            </div>
+            </main>
     )
 }
 

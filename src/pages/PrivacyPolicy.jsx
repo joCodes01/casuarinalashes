@@ -1,13 +1,13 @@
 import React from 'react'
 
 
-export function Menu() {
+export function PrivacyPolicy() {
 
    return(
             <main className="routerPage">
-                <p>Menu page</p>
+                <p>Privacy policy page</p>
             </main>
     )
 }
 
-export default Menu
+export default PrivacyPolicy

@@ -3,9 +3,9 @@ import React from 'react'
 
 export function Contact() {
    return(
-        <div className="routerPage">
+        <main className="routerPage">
             <p>Contact page</p>
-        </div>
+        </main>
     )
 }
 

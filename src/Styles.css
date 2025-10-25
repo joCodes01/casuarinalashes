@@ -18,6 +18,14 @@
 
     --cl-main-padding: 0 4rem 0 4rem;
 }
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main {
+    flex: 1;
+}
 
 a {
     text-decoration: none;
@@ -25,3 +33,34 @@ a {
 .routerPage {
     padding: var(--cl-main-padding);
 }
+
+/* * {
+    border: 1px solid red;
+} */
+.navbar {
+    background-color: var(--cl-lightest);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: var(--cl-main-padding);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.navbaritems {
+    display: flex;
+    align-items: center;
+}
+.navbaritems>*, .footeritems>* {
+    margin-left: .5rem;
+    color: var(--cl-accent);
+}
+.footer {
+     background-color: var(--cl-lightest);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: var(--cl-main-padding);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+

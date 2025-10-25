@@ -6,9 +6,9 @@ export function About() {
 
    return(
         <>
-            <div className="routerPage">
+            <main className="routerPage">
                 <p>About page</p>
-            </div>
+            </main>
         </>
     )
 }
