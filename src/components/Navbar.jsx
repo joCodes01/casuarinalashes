@@ -8,7 +8,7 @@ export function Navbar() {
     return(
         <div className='navbar'>
             <div>
-                <img src={logo} alt="business logo" width="170px"/>
+                <img src={logo} alt="business logo" width="150px"/>
             </div>
             <nav className='navbaritems'>
                 <NavLink to='/'>Home</NavLink>

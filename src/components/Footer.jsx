@@ -8,9 +8,9 @@ export function Footer() {
         <div className='footer'>
            
             <nav className='footeritems'>
-                <NavLink to='/termsandconditions'>TermsAndConditions</NavLink>
+                <NavLink to='/termsandconditions'>Terms and Conditions</NavLink>
                 <NavLink to='/privacypolicy'>PrivacyPolicy</NavLink>
-                <NavLink to='/accessibilitystatement'>AccessibilityStatement</NavLink>
+                <NavLink to='/accessibilitystatement'>Accessibility Statement</NavLink>
             </nav>
         </div>
     )

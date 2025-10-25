@@ -17,6 +17,15 @@
     --cl-accent: #004148;
 
     --cl-main-padding: 0 4rem 0 4rem;
+
+    --cl-font-family-1: "SourceSans3";
+    
+}
+@font-face {
+font-family: "SourceSans3";
+src: local(SorceSans3), 
+url(src/fonts/SourceSans3-VariableFont_wght.ttf) 
+format("truetype");
 }
 #root {
     display: flex;
@@ -26,17 +35,14 @@
 main {
     flex: 1;
 }
+body {
+    font-family: var(--cl-font-family-1);
+}
 
 a {
     text-decoration: none;
 }
-.routerPage {
-    padding: var(--cl-main-padding);
-}
 
-/* * {
-    border: 1px solid red;
-} */
 .navbar {
     background-color: var(--cl-lightest);
     display: flex;
@@ -51,16 +57,45 @@ a {
     align-items: center;
 }
 .navbaritems>*, .footeritems>* {
-    margin-left: .5rem;
+    margin-left: 1rem;
     color: var(--cl-accent);
+    font-weight: 300;
 }
 .footer {
-     background-color: var(--cl-lightest);
+    background-color: var(--cl-lightest);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: var(--cl-main-padding);
     padding-top: 1rem;
     padding-bottom: 1rem;
+    padding: var(--cl-main-padding);
 }
 
+.header { 
+    height: 400px;
+    padding: var(--cl-main-padding);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.headeritems>* {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+ h1{
+    font-size: 4rem;
+    font-weight: 200;
+ }
+ h2 {
+
+ }
+ h3 {
+    font-weight: 300;
+    color: var(--cl-text);
+ }
+ .midsection {
+    background-color: var(--cl-primary);
+    min-height: 300px;
+ }
