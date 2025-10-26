@@ -1,16 +1,21 @@
-# React + Vite
+# Website rebuild with React.js (in progress)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a rebuild of a basic Wordpress Elementor website with React.js.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+It is in the early stages! You can see my progress here: https://casuarinalashes.netlify.app/
 
-## React Compiler
+The original basic website I built and am copying is here: https://casuarinalashes.com.au/
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+currently adding components & content.
+Soon to be styled.
 
-## Expanding the ESLint configuration
+## Goals
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+To put React skills into practice and become familiar with the basics.
+using Vite: learning correct workflow for images, fonts, forms styling etc.
+Add some subtle animations.
+
+To release myself from web host and page builder fees
+
+
