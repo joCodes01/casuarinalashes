@@ -24,7 +24,7 @@
 @font-face {
 font-family: "SourceSans3";
 src: local(SourceSans3), 
-url(src/fonts/SourceSans3-VariableFont_wght.ttf) 
+url(./src/SourceSans3-VariableFont_wght.ttf) 
 format("truetype");
 }
 #root {
