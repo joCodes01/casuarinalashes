@@ -11,7 +11,7 @@ import AccessibilityStatement from './pages/AccessibilityStatement.jsx'
 import NotFound from './pages/NotFound.jsx'
 import { Navbar } from './components/Navbar.jsx'
 import { Footer } from './components/Footer.jsx'
-import '/src/fonts/SourceSans3-VariableFont_wght.ttf'
+import 'public/SourceSans3-VariableFont_wght.ttf'
 
 
 
