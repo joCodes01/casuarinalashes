@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home.jsx'
 import About from './pages/About.jsx'
 import Menu from './pages/Menu.jsx'
@@ -11,7 +11,7 @@ import AccessibilityStatement from './pages/AccessibilityStatement.jsx'
 import NotFound from './pages/NotFound.jsx'
 import { Navbar } from './components/Navbar.jsx'
 import { Footer } from './components/Footer.jsx'
-import '././SourceSans3-VariableFont_wght.ttf'
+import '/src/assets/fonts/SourceSans3-VariableFont_wght.ttf'
 
 
 
