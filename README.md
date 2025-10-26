@@ -3,7 +3,7 @@
 This is a rebuild of a basic Wordpress Elementor website with React.js.
 
 
-It is in the early stages! You can see my progress here: https://casuarinalashes.netlify.app/
+It is in the early stages! You can see my progress here: https://jocodes01.github.io/casuarinalashes/ (COMING SOON)
 
 The original basic website I built and am copying is here: https://casuarinalashes.com.au/
 
