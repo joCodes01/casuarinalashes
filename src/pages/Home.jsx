@@ -7,12 +7,11 @@ export function Home() {
 
    return(
             <main className="routerPage">
-                <p>Home page</p>
                 <Header 
                     title="LASH LIFT & EXTENSIONS" 
                     tagline="Enjoy elegant, effortless & naturally beautiful lashes from beach walks to evenings out."               
                 />
-                <MidSection />
+                <MidSection layout="grid"/>
             </main>
     )
 }

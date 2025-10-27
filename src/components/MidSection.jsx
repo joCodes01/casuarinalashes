@@ -1,16 +1,29 @@
 import React from 'react'
+import InfoCardDataCenter from '/src/components/InfoCardDataCenter.jsx'
+import InfoCardDataGrid from '/src/components/InfoCardDataGrid.jsx'
+import InfoCardDataMenu from '/src/components/InfoCardDataMenu.jsx'
 
 
-export function MidSection() {
+            
+
+export function MidSection({ title, info, layout }) {
+
+    let content;
+
+    if ( layout == 'menu') {
+        content = <InfoCardDataMenu />
+    } else if ( layout == 'grid') {
+        content = <InfoCardDataGrid /> 
+    } else {
+        content = <InfoCardDataCenter title={title} info={info} />
+    }
+            
+
     return(
-        <div className='midsection'>
-            <div className='midsectionContainer'>
-                <section>
-                    
-                </section>
-            </div>
-        </div>
-    )
+        <section className='midsection'>
+            { content }    
+        </section>      
+    ) 
 }
 
 export default MidSection
