@@ -5,7 +5,7 @@ import MidSection from '/src/components/MidSection.jsx'
 
 export function Contact() {
    return(
-        <main className="routerPage">
+        <main className="page-content">
               <Header 
                     title="LASH TECH IN CASUARINA" 
                     tagline="Book your complimentary consultation."               

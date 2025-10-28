@@ -4,7 +4,7 @@ import React from 'react'
 export function PrivacyPolicy() {
 
    return(
-            <main className="routerPage">
+            <main className="page-content">
                 <p>Privacy policy page</p>
             </main>
     )

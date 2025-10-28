@@ -7,7 +7,7 @@ import JotForm from '/src/components/JotForm.jsx'
 export function NewClientForm() {
 
    return(
-            <main className="routerPage">
+            <main className="page-content">
                  <Header 
                     title="NEW CLIENT FORM" 
                     tagline="Welcome to Casuarina lashes."               

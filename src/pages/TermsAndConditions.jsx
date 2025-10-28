@@ -4,7 +4,7 @@ import React from 'react'
 export function TermsAndConditions() {
 
    return(
-            <main className="routerPage">
+            <main className="page-content">
                 <p>Terms and conditions page</p>
             </main>
     )

@@ -43,7 +43,7 @@
                             description=""
                         />
                         <MenuItem 
-                            title="Eyelash extensio9n removal with a new set"
+                            title="Eyelash extension removal with a new set"
                             cost="15"
                             description=""
                         />

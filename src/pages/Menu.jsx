@@ -6,7 +6,7 @@ import MidSection from '/src/components/MidSection.jsx'
 export function Menu() {
 
    return(
-            <main className="routerPage">
+            <main className="page-content">
                  <Header 
                         title="LASH SERVICE MENU" 
                         tagline="Lash Lift/Lamination & Eyelash Extensions."    

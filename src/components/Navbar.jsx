@@ -10,12 +10,24 @@ export function Navbar() {
             <div>
                 <img src={logo} alt="business logo" width="150px"/>
             </div>
-            <nav className='navbaritems'>
-                <NavLink to='/'>Home</NavLink>
-                <NavLink to='/about'>About</NavLink>
-                <NavLink to='/menu'>Menu</NavLink>
-                <NavLink to='/contact'>Contact</NavLink>
-                <NavLink to='/newclientform'>New client form</NavLink>
+            <nav >
+                <ul className='navbaritems'>
+                    <li>
+                        <NavLink to='/'>Home</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to='/about'>About</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to='/menu'>Menu</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to='/contact'>Contact</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to='/newclientform'>New client form</NavLink>
+                    </li>
+                </ul>
             </nav>
         </div>
     )
