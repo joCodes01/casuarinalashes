@@ -8,6 +8,7 @@ import NewClientForm from './pages/NewClientForm.jsx'
 import PrivacyPolicy from './pages/PrivacyPolicy.jsx'
 import TermsAndConditions from './pages/TermsAndConditions.jsx'
 import AccessibilityStatement from './pages/AccessibilityStatement.jsx'
+import Blog from '/src/pages/Blog.jsx'
 import NotFound from './pages/NotFound.jsx'
 import { Navbar } from './components/Navbar.jsx'
 import { Footer } from './components/Footer.jsx'
@@ -35,6 +36,7 @@ function App() {
             <Route path='/privacypolicy' element={<PrivacyPolicy />} />
             <Route path='/termsandconditions' element={<TermsAndConditions />} />
             <Route path='/accessibilitystatement' element={<AccessibilityStatement />} />
+            <Route path='/blog/:slug' element={<Blog />} />
             <Route path='*' element={<NotFound />} />
           </Routes>
         </>

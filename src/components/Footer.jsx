@@ -7,10 +7,18 @@ export function Footer() {
     return(
         <div className='footer'>
            
-            <nav className='footeritems'>
-                <NavLink to='/termsandconditions'>Terms and Conditions</NavLink>
-                <NavLink to='/privacypolicy'>PrivacyPolicy</NavLink>
-                <NavLink to='/accessibilitystatement'>Accessibility Statement</NavLink>
+            <nav >
+                <ul className='footeritems'>
+                    <li>
+                        <NavLink to='/termsandconditions'>Terms and Conditions</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to='/privacypolicy'>PrivacyPolicy</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to='/accessibilitystatement'>Accessibility Statement</NavLink>
+                    </li>
+                </ul>
             </nav>
         </div>
     )

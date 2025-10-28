@@ -68,18 +68,21 @@ section {
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
-.navbaritems {
+.navbaritems, .footeritems {
     display: flex;
     align-items: center;
     list-style-type: none;
 }
-.navbaritems li > *, .footeritems > * {
+.navbaritems li > *, .footeritems li > * {
     margin-left: 1rem;
     color: var(--cl-accent);
     font-weight: 300;
 }
 .footer {
     background-color: var(--cl-light);
+
+}
+.footer nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -89,11 +92,6 @@ section {
     padding: var(--cl-main-padding);
     height: 50px;
 }
-.footeritems {
-    display: flex;
-    align-items: center;
-}
-
 .header { 
     height: 400px;
     padding: var(--cl-main-padding);
@@ -132,6 +130,7 @@ section {
  }
  p {
     font-size: 1.2rem;
+    font-weight: 300;
  }
  .midsection {
     padding: var(--cl-main-padding);
@@ -283,7 +282,7 @@ section {
     text-align: center;
     margin-bottom: 2rem;
 }
-.blog-container {
+.blog-section-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 3rem;
@@ -295,6 +294,7 @@ section {
 .blog-card-container {
     border-radius: var(--cl-borderradius);
     box-shadow: var(--cl-boxshadow); 
+    min-height: 100%;
 }
 .blog-card-container > img {
     border-radius: 20px 20px 0 0;
@@ -304,21 +304,63 @@ section {
     padding: 1rem;
 }
 .service-explainer-container {
-    margin-top: 12rem;
+    margin-top: 12rem; 
+    margin-bottom: rem;
 } 
 .service-explainer {
     display: grid;
-    grid-template-columns: 1fr 2fr; 
+    grid-template-columns: 33.33% 66.66%; 
     margin-bottom: 6rem;
     gap: 3rem;
     
 }   
-service-explainer > image {
+.lift-image {
     width: 100%;
 }
 .service-explainer-images {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+}
+.blog-page {
+    background-color: var(--cl-primary);
+    display: flex;
+    justify-content: center;;
+}
+.blog-container {
+    background-color: var(--cl-lightest);
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--cl-borderradius);
+    max-width: 60%;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    box-shadow: var(--cl-boxshadow);
+}
+.blog-container > img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;;
+}
+.blog-container > h2 {
+    text-align: center;
+    font-size: 2.3rem;
+
+}
+.blog-container li {
+    font-weight: 300;
+}
+.blog-container h3 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.blog-content {
+    padding: 6rem;
+}
+.back-link-about {
+    margin: 3rem;
+    margin-left: auto;
+    font-size: 1.3rem;
 }
 
 /* * {
