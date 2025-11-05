@@ -2,6 +2,7 @@ import React from 'react'
 import Header from '/src/components/Header.jsx'
 import MidSection from '/src/components/MidSection.jsx'
 import BlogSection from '/src/components/BlogSection.jsx'
+import Accordian from '/src/components/Accordian.jsx'
 
 
 export function About() {
@@ -17,7 +18,9 @@ export function About() {
                     title="Lash trained at pinewood film studios UK with high standards in service and application." 
                     info="Qualified and experienced Beauty Specialist & Make-up Artist since 2002. "
                 />
+                
                 <BlogSection />
+                <Accordian />
             </main>
         </>
     )

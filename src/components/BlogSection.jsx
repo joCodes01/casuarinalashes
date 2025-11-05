@@ -17,21 +17,22 @@ export function BlogSection() {
 
     return(
         <>
-            <div className="blog-section-container">
-                {blogArray.map( (blog) => (
-                     <BlogCard 
-                        key={blog.slug}
-                        title={blog.title}
-                        content={blog.shortContent}
-                        image={blog.image}
-                        alttext={blog.alttext}
-                        readmore={blog.slug}
-                    />
-
-                ))}
-               
-            
-            </div>
+            <section className="blog-section">
+                <div className="blog-section-container">
+                    {blogArray.map( (blog) => (
+                         <BlogCard
+                            key={blog.slug}
+                            title={blog.title}
+                            content={blog.shortContent}
+                            image={blog.image}
+                            alttext={blog.alttext}
+                            readmore={blog.slug}
+                        />
+                    ))}
+                
+                
+                </div>
+            </section>
                   {/* FAQs <p>Can you infill my lashes from another lash tech?</p>
                 <p>What is the environment like where you do the lashes?</p>
                 <p>Can I buy aftercare products from you?</p>
@@ -40,27 +41,7 @@ export function BlogSection() {
                 <p>Are there any reasons why I couldn't have a lash lift?</p>
                 <p>Do yu offer brow services?</p> */}
 
-            <section className="service-explainer-container">
-                <div className="service-explainer">
-                    <div>
-                        <h2>Gentle & comfortable lash lift application</h2>
-                        <p>Perfect for a maintenance free lash enhancement! Elleeplex Profusion system with gentle cysteamine solution and nourishing Re-Gen treatment. </p> 
-                    </div>
-                    <img className="lift-image" src={ imageLiftApplication } alt="" width="600px"/>
-                </div>
-                <div className="service-explainer">
-                    <div>
-                        <h2>Classic & gentle hybrid extension styles</h2>
-                        <p>No mega volume fashion lashes here I’m afraid. I enjoy creating lashes that compliment your natural beauty but aren’t too extreme. I offer Classic, hybrid & gentle light volume lashes.</p> 
-                    </div>
-                    <div className="service-explainer-images">
-                        <img src={ imageVolumeLashes } alt="Photo of volume lashes with a graphical cross through the image." width="300px"/>
-                        <img src={ imageClassicLashes } alt="Photo of classic lashes with a graphical tick on the image." width="300px"/>
-                    </div>
-                    
-                </div>
-
-            </section>
+     
 
             
         </>

@@ -7,10 +7,10 @@ import logo from '/src/assets/images/CasuarinaLashesLogo.png'
 export function Navbar() {
     return(
         <div className='navbar'>
-            <div>
+            <div className="logo-container">
                 <img src={logo} alt="business logo" width="150px"/>
             </div>
-            <nav >
+            <nav className="nav-primary">
                 <ul className='navbaritems'>
                     <li>
                         <NavLink to='/'>Home</NavLink>

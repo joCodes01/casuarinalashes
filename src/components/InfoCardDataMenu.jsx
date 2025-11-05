@@ -6,7 +6,7 @@
     export function InfoCardDataMenu({ title, cost, description }) {
         return(
                 <div className="menu-container info-card">
-                        <h2>MENU</h2>
+                        <h2 className="section-heading">MENU</h2>
                         <MenuItem 
                             title="Eyelash extensions- classic set"
                             cost="120"
