@@ -31,11 +31,21 @@ export function Contact() {
                     </div>
                     <div className="form-container">
                         <h2>Online form</h2>
-                        <form>
+                        <form className="contact-form">
                             <div className="contact-form-inputs">
-                                <input></input>
-                                <input></input>
-                                <input></input>
+                                <div>
+                                    <label for="contact-name">Name</label>
+                                    <input type="text"></input>
+                                </div>
+                                <div>
+                                    <label for="contact-email">Email</label>
+                                    <input type="text"></input>
+                                </div>
+                                <div>
+                                    <label for="contact-message">Message</label>
+                                    <textarea></textarea>   
+                                </div>
+                                <button type="submit">Send</button>
                             </div>
                         </form>
                     </div>

@@ -5,8 +5,8 @@
   margin: 0;
   padding: 0;
 }
-/* 
-* {
+
+/* * {
     border: 1px solid red;
 }  */
 
@@ -62,6 +62,17 @@ body {
 a {
     text-decoration: none;
 }
+button{
+    height: 2.5rem;
+    border: none;
+    background-color: var(--cl-accent);
+    color: var(--cl-lightest);
+    font-family: var(--cl-font-family-1);
+    font-size: 1.4rem;
+    font-weight: 200;
+    border-radius: 5px;
+}
+
 section {
     padding: var(--cl-main-padding);
 }
@@ -145,6 +156,7 @@ section {
     font-weight: 300;
  }
 
+
 /* media queries for fonts */
 
 @media screen and (max-width: 935px ) {
@@ -160,8 +172,7 @@ section {
     h4 {
         font-size: 1rem;
 
-    }
-    
+    } 
 }
 
 
@@ -483,24 +494,32 @@ section {
 .call-text > div {
     padding: 2rem 0;
 }
-
-
   .form-container {
     width: 100%;
-    padding: 2rem;
+    padding: 2rem 2rem 0 2rem;
     margin-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%
   }
  
   .contact-form-inputs {
     display: flex;
     flex-direction: column;
+    height: 100%;
+    gap: 2rem;
   }
-  /* .contact-left {
-    width: 66.66%;
-  } */
+  .contact-form-inputs > div {
+    display: flex;
+    flex-direction: column;
+  }
+
   #googlemap {
    min-width: 500px;
    height: 400px;
+  }
+  .contact-form {
+    height: 100%;
   }
 
 /* @media screen and (max-width: 642px ) {
@@ -508,3 +527,13 @@ section {
     }
     
 } */
+ .contact-form-inputs> Div> input {
+    height: 2rem;
+ }
+ .contact-form-inputs> Div>textarea {
+    height: 12rem;
+ }
+ .contact-form-inputs>button {
+    margin-top: auto;
+
+ }
