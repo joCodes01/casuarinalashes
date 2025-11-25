@@ -45,7 +45,7 @@ export function Contact() {
                                     <label for="contact-message">Message</label>
                                     <textarea></textarea>   
                                 </div>
-                                <button type="submit">Send</button>
+                                <button className="button-style" type="submit">Send</button>
                             </div>
                         </form>
                     </div>

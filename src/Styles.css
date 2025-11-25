@@ -7,7 +7,7 @@
 }
 
 /* * {
-    border: 1px solid red;
+    border: 1px solid pink;
 }  */
 
 
@@ -30,9 +30,10 @@
     --cl-menuitem-fontweight: 350;
     --cl-welcomefont: "Allison-Regular";
     --cl-h2-section-heading: 2.5rem;
+    
 
 
-    --cl-font-family-1: "SourceSans3";
+    --cl-font-family-1: "SourceSans3", "Segoe UI", Roboto, "Helvetica Neue", "Nimbus Sans", Arial, sans-serif;;
     
 }
 @font-face {
@@ -53,6 +54,9 @@ format("truetype");
     flex-direction: column;
     min-height: 100vh;
 }
+button {
+  all: unset;
+}
 main {
     flex: 1;
 }
@@ -62,7 +66,7 @@ body {
 a {
     text-decoration: none;
 }
-button{
+.button-style{
     height: 2.5rem;
     border: none;
     background-color: var(--cl-accent);
@@ -72,12 +76,16 @@ button{
     font-weight: 200;
     border-radius: 5px;
 }
+label {
+    font-family: var(--cl-font-family-1);
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: var(--cl-accent);
+    margin-bottom: .3rem;;
+}
 
 section {
     padding: var(--cl-main-padding);
-}
-.nav-primary {
-    display: flex;
 }
 .logo-container {
     display: flex;
@@ -100,6 +108,28 @@ section {
     margin-left: 1rem;
     color: var(--cl-accent);
     font-weight: 300;
+}
+.navbaritems-mobile {
+    list-style-type: none;
+    color: var(--cl-darkest);
+    font-weight: 300;
+    text-align: center;
+    position: fixed;
+    top: 92px;
+    width: 100%;
+    background-color: var(--cl-lightest);
+    border-bottom: 1px solid var(--cl-accent)
+}
+.navbaritems-mobile li {
+    padding: .7rem;
+    /* border: 1px solid black; */
+}
+.navbar-mobile {
+    display: none;   
+}
+.hamburger-btn {
+    color: var(--cl-mid);
+    background-color: var(--cl-lightest);
 }
 .footer {
     background-color: var(--cl-light);
@@ -521,19 +551,34 @@ section {
   .contact-form {
     height: 100%;
   }
-
-/* @media screen and (max-width: 642px ) {
-    h2 {
-    }
-    
-} */
  .contact-form-inputs> Div> input {
     height: 2rem;
  }
  .contact-form-inputs> Div>textarea {
-    height: 12rem;
+    height: 10rem;
  }
  .contact-form-inputs>button {
     margin-top: auto;
-
  }
+@media screen and (max-width: 764px ) {
+    .info-card-grid-container {
+        grid-template-columns: 1fr;
+    }
+    .navbar {
+        display: none;
+    }
+    .mobile-bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem;
+        align-items: center;
+    }
+    .navbar-mobile {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+       
+    }
+  
+}
