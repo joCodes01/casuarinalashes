@@ -4,8 +4,8 @@ export function Testimonial({content, clientName}) {
 
     return(
         <div className="testimonial-container">
-            <h4>{ content }</h4>
-            <p>{ clientName }</p>
+            <p className="testimonial-text">{ content }</p>
+            <p className="testimonial-name">{ clientName }</p>
         </div>
 
     )

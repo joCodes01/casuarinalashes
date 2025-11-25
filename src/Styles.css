@@ -75,6 +75,7 @@ a {
     font-size: 1.4rem;
     font-weight: 200;
     border-radius: 5px;
+    text-align: center;
 }
 label {
     font-family: var(--cl-font-family-1);
@@ -114,16 +115,22 @@ section {
     color: var(--cl-darkest);
     font-weight: 300;
     text-align: center;
-    position: fixed;
+    position: absolute;
     top: 92px;
     width: 100%;
     background-color: var(--cl-lightest);
     border-bottom: 1px solid var(--cl-accent)
 }
 .navbaritems-mobile li {
-    padding: .7rem;
-    /* border: 1px solid black; */
+    padding: 1rem;
 }
+.navbaritems-mobile li a{
+    padding: .7rem;
+    color: var(--cl-accent);
+    font-size: 1.3rem;
+    font-weight: 350;
+}
+
 .navbar-mobile {
     display: none;   
 }
@@ -166,7 +173,7 @@ section {
     color: var(--cl-mid);
     margin-bottom: 1.5rem;
  }
- h3 {
+ h3, .my-clients {
     font-weight: 280;
     color: var(--cl-mid);
     font-size: 1.4rem;
@@ -176,6 +183,13 @@ section {
     font-size: 1.3rem;
     font-weight: 200;
  }
+ .info-center {
+    color: var(--cl-text);
+    font-size: 1.3rem;
+    font-weight: 200;
+
+ }
+
   h5 {
     color: var(--cl-darkest);
     font-size: 1.2rem;
@@ -269,6 +283,9 @@ section {
     justify-content: center;
     margin-top: -4rem;
 }
+.menu-item-cost-mobile {
+    display: none;
+}
 
 /* Home */
 .hello-lash-tech {
@@ -281,7 +298,7 @@ section {
     display: flex;
     flex-direction: column;;
 }
-.hello-lash-tech h3 {
+.hello-lash-tech p {
     text-align: center;
     margin-bottom: 6rem;
 }
@@ -317,7 +334,6 @@ section {
 }
 .lift, .extensions {
     max-width: 800px;
-
 }
 
 .lash-grid {
@@ -367,10 +383,15 @@ section {
 .testimonial-container {
     margin-bottom: 4rem;
 }
-.testimonial-container > p {
+.testimonial-name {
     color: var(--cl-text);
     margin-top: 1rem;
 }
+ .testimonial-text {
+    color: var(--cl-text);
+    font-size: 1.3rem;
+    font-weight: 300;
+ }
 .testimonial-section h2 {
     text-align: center;
     margin-bottom: 2rem;
@@ -545,8 +566,8 @@ section {
   }
 
   #googlemap {
-   min-width: 500px;
-   height: 400px;
+    width: 100%;
+    border: 0;
   }
   .contact-form {
     height: 100%;
@@ -561,6 +582,10 @@ section {
     margin-top: auto;
  }
 @media screen and (max-width: 764px ) {
+
+    :root {
+    --cl-main-padding: 1rem 1.5rem 1rem 1.5rem;
+    }
     .info-card-grid-container {
         grid-template-columns: 1fr;
     }
@@ -578,7 +603,102 @@ section {
         display: flex;
         flex-direction: column;
         position: relative;
-       
     }
-  
+    .midsection {
+        padding: 6rem 2rem;
+    }
+    .headeritems {
+        padding: 2rem;
+    }
+    .hello-lash-tech-items > img {
+        max-width: 70%
+    }
+    .lash-gallery {
+    padding: 6rem 1rem;
+    }
+    .service-container {
+    padding: 2rem;
+    margin: 0rem;
+    }
+    .lash-grid {
+    grid-template-columns: 1fr 1fr;;
+    }
+    .lash-lift-grid {
+    grid-template-columns: 1fr;
+    margin-bottom: 6rem;
+    }
+    .testimonials-container {
+    margin: 6rem 1rem;
+    max-width: 100%;
+    }
+   .lash-gallery .lift h2 {
+    margin-bottom: 1rem;
+   }
+   .blog-section-container {
+    grid-template-columns: 1fr;
+    margin: 2rem;
+    padding-top: 6rem;
+   }
+   .accordian-container {
+    padding: 6rem 2rem;
+   }
+   .menu-container  {
+    margin: 0;
+    padding: 4rem 2.5rem;
+   }
+   .menu-item-title {
+    flex-direction: column;
+   }
+   .menu-item-heading {
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-align: left;
+   }
+   .menu-item p {
+    font-weight: 300;
+    font-size: 1.2rem;
+   }
+   .menu-item-cost {
+    display: none;
+   }
+   .menu-item-cost-mobile {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--cl-mid);
+    text-align: right;
+   }
+   .info-center {
+    font-weight: 300;
+   }
+   .contact-section {
+    padding: 6rem 1rem;
+   }
+   .contact-items {
+    flex-direction: column;
+   }
+   .map-container {
+    max-width: 100%;
+   }
+   .form-container {
+    margin-left: 0;
+    margin-top: 4rem;
+   }
+   .footeritems{
+    flex-direction: column;
+   }
+   .footeritems li {
+    margin: .3rem;
+   }
+    .footeritems li a {
+    font-weight: 350;
+    font-size: 1.1rem;
+   }
+   .footer {
+    min-height: 150px;
+   }
+   .footer nav {
+    justify-content: center;
+    align-content: center;
+   }
 }

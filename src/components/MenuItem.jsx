@@ -11,6 +11,7 @@ export function MenuItem({ title, cost, description }) {
                 <span className="menu-item-cost">${ cost }</span>
             </div>
             <p>{ description }</p>
+            <span className="menu-item-cost-mobile">${ cost }</span>
         </div>
     )
 }

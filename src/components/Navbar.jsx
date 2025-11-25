@@ -15,13 +15,16 @@ const [mobileNav, setMobileNav] = useState(false);
 
 function toggleMobileNav() {
     setMobileNav(prev => !prev);
-    console.log(mobileNav);
+}
+
+function closeMobileNav() {
+    setTimeout(toggleMobileNav, 300)
 
 }
     return(<>
         <nav className='navbar'>
             <div className="logo-container">
-                <img src={logo} alt="business logo" width="150px"/>
+                <NavLink onClick={ closeMobileNav } to='/'><img src={logo} alt="business logo" width="150px"/></NavLink>
             </div>
             
             <ul className='navbaritems'>
@@ -47,10 +50,11 @@ function toggleMobileNav() {
         <nav className="navbar-mobile">
              <div className="mobile-bar">
                  <div className="logo-container-mobile">
-                    <img src={logo} alt="business logo" width="150px"/>
+                    <NavLink onClick={ closeMobileNav } to='/'><img src={logo} alt="business logo" width="150px"/></NavLink>
+                    
                 </div>
                              
-                <button aria-label="open nav menu" onClick={toggleMobileNav}>
+                <button aria-label="open nav menu" onClick={ toggleMobileNav }>
                     <FontAwesomeIcon className="hamburger-btn" size="2x" icon={faBars} /> 
                 </button>
              </div>
@@ -58,19 +62,19 @@ function toggleMobileNav() {
             {mobileNav && (
                 <ul className='navbaritems-mobile'>
                     <li>
-                        <NavLink to='/'>Home</NavLink>
+                        <NavLink onClick={ closeMobileNav } to='/'>Home</NavLink>
                     </li>
                     <li>
-                        <NavLink to='/about'>About</NavLink>
+                        <NavLink onClick={ closeMobileNav } to='/about'>About</NavLink>
                     </li>
                     <li>
-                        <NavLink to='/menu'>Menu</NavLink>
+                        <NavLink onClick={ closeMobileNav } to='/menu'>Menu</NavLink>
                     </li>
                     <li>
-                        <NavLink to='/contact'>Contact</NavLink>
+                        <NavLink onClick={ closeMobileNav } to='/contact'>Contact</NavLink>
                     </li>
                     <li>
-                        <NavLink to='/newclientform'>New client form</NavLink>
+                        <NavLink onClick={ closeMobileNav } to='/newclientform'>New client form</NavLink>
                     </li>
                 </ul>
 

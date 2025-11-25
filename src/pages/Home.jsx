@@ -32,7 +32,7 @@ export function Home() {
                     <div className="hello-lash-tech-items">
                         <h2 className="welcome-text">Hello I'm Joanna, your Eyelash Technician.</h2>
                         <img src={ photo } alt="photo of the eyelash technician smiling"/>
-                        <h3>My clients favour a natural, classic & elegant style. I enjoy creating gorgeous lashes which you feel could be your own.</h3>
+                        <p className="my-clients">My clients favour a natural, classic & elegant style. I enjoy creating gorgeous lashes which you feel could be your own.</p>
                     </div>
                 </section>
                 <section className="lash-gallery">

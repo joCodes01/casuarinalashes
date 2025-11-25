@@ -6,7 +6,7 @@
             
         <div className='info-card'>
             <h2>{ title }</h2>
-            <h4>{ info }</h4>
+            <p className="info-center">{ info }</p>
         </div>
         )
     }
