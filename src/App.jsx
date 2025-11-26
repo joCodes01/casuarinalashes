@@ -1,50 +1,51 @@
-import { useState } from 'react'
-import { HashRouter as Router, Routes, Route } from 'react-router-dom'
-import Home from './pages/Home.jsx'
-import About from './pages/About.jsx'
-import Menu from './pages/Menu.jsx'
-import Contact from './pages/Contact.jsx'
-import NewClientForm from './pages/NewClientForm.jsx'
-import PrivacyPolicy from './pages/PrivacyPolicy.jsx'
-import TermsAndConditions from './pages/TermsAndConditions.jsx'
-import AccessibilityStatement from './pages/AccessibilityStatement.jsx'
-import Blog from '/src/pages/Blog.jsx'
-import NotFound from './pages/NotFound.jsx'
-import { Navbar } from './components/Navbar.jsx'
-import { Footer } from './components/Footer.jsx'
-import '/src/assets/fonts/SourceSans3-VariableFont_wght.ttf'
-import '/src/assets/fonts/Allison-Regular.ttf'
+import { useState } from "react";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home.jsx";
+import About from "./pages/About.jsx";
+import Menu from "./pages/Menu.jsx";
+import Contact from "./pages/Contact.jsx";
+import NewClientForm from "./pages/NewClientForm.jsx";
+import PrivacyPolicy from "./pages/PrivacyPolicy.jsx";
+import TermsAndConditions from "./pages/TermsAndConditions.jsx";
+import AccessibilityStatement from "./pages/AccessibilityStatement.jsx";
+import Blog from "/src/pages/Blog.jsx";
+import NotFound from "./pages/NotFound.jsx";
+import { Navbar } from "./components/Navbar.jsx";
+import { Footer } from "./components/Footer.jsx";
+import "/src/assets/fonts/SourceSans3-VariableFont_wght.ttf";
+import "/src/assets/fonts/Allison-Regular.ttf";
 
-
-
-import '/src/Styles.css'
-
+import "/src/Styles.css";
 
 function App() {
-
-  return(
-    < >
+  return (
+    <>
       <Router>
         <Navbar />
         <>
           <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/about' element={<About />} />
-            <Route path='/menu' element={<Menu />} />
-            <Route path='/contact' element={<Contact />} />
-            <Route path='/newclientform' element={<NewClientForm />} />
-            <Route path='/privacypolicy' element={<PrivacyPolicy />} />
-            <Route path='/termsandconditions' element={<TermsAndConditions />} />
-            <Route path='/accessibilitystatement' element={<AccessibilityStatement />} />
-            <Route path='/blog/:slug' element={<Blog />} />
-            <Route path='*' element={<NotFound />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/menu" element={<Menu />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/newclientform" element={<NewClientForm />} />
+            <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+            <Route
+              path="/termsandconditions"
+              element={<TermsAndConditions />}
+            />
+            <Route
+              path="/accessibilitystatement"
+              element={<AccessibilityStatement />}
+            />
+            <Route path="/blog/:slug" element={<Blog />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </>
         <Footer />
       </Router>
     </>
-  )
+  );
 }
 
-export default App
-
+export default App;
