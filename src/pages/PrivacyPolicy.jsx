@@ -5,12 +5,13 @@ export function PrivacyPolicy() {
     <main className="page-content">
       <section className="document">
         <h1 className="document-heading">PRIVACY POLICY</h1>
-
-        <h2>Casuarina Lashes Privacy Policy</h2>
-        <p>
+        <p className="document-updated">
           Joanna Wand ABN 18855021094, www.casuarinalashes.com.au - Updated
           January 2025
         </p>
+
+        <h2>Casuarina Lashes Privacy Policy</h2>
+
         <p>
           ‘Casuarina Lashes’ refers to ‘Joanna Wand’ trading as ‘Casuarina
           Lashes’.

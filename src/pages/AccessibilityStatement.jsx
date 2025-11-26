@@ -5,11 +5,13 @@ export function AccessibilityStatement() {
     <main className="page-content">
       <section className="document">
         <h1 className="document-heading">ACCESSIBILITY STATEMENT</h1>
-        <p>Casuarina Lashes ABN 18855021094 - Updated October 2025</p>
+        <p className="document-updated">
+          Casuarina Lashes ABN 18855021094 - Updated October 2025
+        </p>
 
         <h2>Accessibility Statement for https://casuarinalashes.com.au/</h2>
         <p>
-          Casuarina Lashes is committed to ensuring digital accessibility for
+          ’Casuarina Lashes’ is committed to ensuring digital accessibility for
           people with disabilities. We are continually improving the user
           experience for everyone and applying the relevant accessibility
           standards.
@@ -22,7 +24,7 @@ export function AccessibilityStatement() {
           AA, and Level AAA.
         </p>
         <p>
-          Casuarina Lashes is making constant efforts to improve the
+          ’Casuarina Lashes’ is making constant efforts to improve the
           accessibility of its site and services in the belief that it is our
           collective moral obligation to allow seamless, accessible, and
           unhindered use for those of us with disabilities.
@@ -39,7 +41,7 @@ export function AccessibilityStatement() {
         </p>
         <h3>Feedback</h3>
         <p>
-          We welcome your feedback on the accessibility of Casuarina Lashes
+          We welcome your feedback on the accessibility of ’Casuarina Lashes’
           website. Please let us know if you encounter accessibility barriers on
           our website: E-mail: casuarinalashes@gmail.com
         </p>
