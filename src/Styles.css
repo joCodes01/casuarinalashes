@@ -491,18 +491,18 @@ background-color: red;
     display: flex;
     justify-content: space-between;
 }
-.back-link {
+
+.back-link, .next-link {
     margin: 3rem;
-    margin-right: auto;
     font-size: 1.3rem;
+    font-weight: 350;
+}
+.back-link {
+    margin-right: auto;
 }
 .next-link {
-    margin: 3rem;
     margin-left: auto;
-    font-size: 1.3rem;
 }
-
-
 
 .back-link > a,.next-link > a {
     color: var(--cl-mid);
@@ -606,12 +606,10 @@ background-color: red;
     .contact-section {
         padding: 6rem 2rem;
     }
-
    .contact-items {
         grid-template-columns: 1fr;
         margin-bottom: 6rem;
    }
-  
    .map-container {
         max-width: 100%;
    }
@@ -622,7 +620,14 @@ background-color: red;
    .new-client-form-container {
     padding: 6rem 1rem;
  }
- 
+ .service-container {
+    padding: 6rem 1rem;
+    /* max-width: 100; */
+    margin: 0;
+ }
+ .blog-section-container {
+    grid-template-columns: 1fr 1fr;
+ }
 }
 
 

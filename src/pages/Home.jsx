@@ -80,7 +80,7 @@ export function Home() {
                 </section>
                 <section className="testimonial-section">
                     <div className="testimonials-container">
-                        <h2>Client Testimonials</h2>
+                        <h2 className="section-heading">CLIENT TESTIMONIALS</h2>
                         <Testimonial
                             content="I've never felt so beautiful as my wedding day thanks to you x x x."
                             clientName="🩷 Joanna H"
