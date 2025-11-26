@@ -5,6 +5,7 @@ import { BlogData } from '/src/assets/data/BlogData.jsx'
 import { NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons/faArrowLeft' 
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons/faArrowRight' 
 
 
 export function Blog() {
@@ -25,6 +26,8 @@ export function Blog() {
 
     const nextBlog = currentBlog + 1;
     console.log("next blog is: " + nextBlog);
+
+    console.log( Boolean(blogArray[nextBlog]));
 
  
 
@@ -47,9 +50,15 @@ export function Blog() {
                     <h2>{ blog.title } </h2>
                     <div>{ blog.longContent } </div>
                 </div>
-                {prevBlog >= 0 && (
-                    <span className="back-link-about" ><NavLink to={`/blog/${blogArray[prevBlog].slug}`}>  <FontAwesomeIcon size="1x" icon={faArrowLeft} /> go back</NavLink></span>
-                )}
+                <div className="arrow-container">
+                    {prevBlog >= 0 && (
+                        <span className="back-link" ><NavLink to={`/blog/${blogArray[prevBlog].slug}`}> <FontAwesomeIcon size="1x" icon={faArrowLeft} /> back</NavLink> </span>
+                    )}
+
+                    {blogArray[nextBlog] && (
+                        <span className="next-link" ><NavLink to={`/blog/${blogArray[nextBlog].slug}`}> next<FontAwesomeIcon size="1x" icon={faArrowRight} /> </NavLink> </span>
+                    ) }
+                </div>
                 
             </div>
         </div>

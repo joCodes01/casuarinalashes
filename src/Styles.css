@@ -487,12 +487,24 @@ background-color: red;
 .blog-content {
     padding: 6rem;
 }
-.back-link-about {
+.arrow-container {
+    display: flex;
+    justify-content: space-between;
+}
+.back-link {
     margin: 3rem;
     margin-right: auto;
     font-size: 1.3rem;
 }
-.back-link-about > a {
+.next-link {
+    margin: 3rem;
+    margin-left: auto;
+    font-size: 1.3rem;
+}
+
+
+
+.back-link > a,.next-link > a {
     color: var(--cl-mid);
     display: flex;
     align-items: center;
