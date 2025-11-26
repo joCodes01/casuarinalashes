@@ -3,6 +3,8 @@ import { useParams } from 'react-router-dom'
 import BlogCard from '/src/components/BlogCard.jsx'
 import { BlogData } from '/src/assets/data/BlogData.jsx'
 import { NavLink } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons/faArrowLeft' 
 
 
 export function Blog() {
@@ -12,10 +14,29 @@ export function Blog() {
     
     const blog = BlogData[slug];
 
+    const blogArray = Object.values(BlogData);
+    console.log(blogArray);
+
+    const currentBlog = blogArray.findIndex(blog => blog.slug === slug);
+    console.log("current blog is: " + currentBlog);
+
+    const prevBlog = currentBlog - 1;
+    console.log("previous blog is: " + prevBlog)
+
+    const nextBlog = currentBlog + 1;
+    console.log("next blog is: " + nextBlog);
+
+ 
+
+
+
+
+
 
       if (!blog) {
         return <p>Blog not found</p>;
     }
+   
     
 
     return(
@@ -26,7 +47,9 @@ export function Blog() {
                     <h2>{ blog.title } </h2>
                     <div>{ blog.longContent } </div>
                 </div>
-                <span className="back-link-about" ><NavLink to='/about'>go back</NavLink></span>
+                {prevBlog >= 0 && (
+                    <span className="back-link-about" ><NavLink to={`/blog/${blogArray[prevBlog].slug}`}>  <FontAwesomeIcon size="1x" icon={faArrowLeft} /> go back</NavLink></span>
+                )}
                 
             </div>
         </div>
