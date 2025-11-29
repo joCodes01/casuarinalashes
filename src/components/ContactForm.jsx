@@ -18,10 +18,13 @@ export function ContactForm() {
     formData.append("submit", "1");
 
     try {
-      const resp = await fetch("http://localhost:2487/lash-api/Mailer.php", {
-        method: "POST",
-        body: formData,
-      });
+      const resp = await fetch(
+        "http://localhost:2487/lash-api/lash-contact-mailer.php",
+        {
+          method: "POST",
+          body: formData,
+        }
+      );
 
       if (!resp.ok) {
         throw new Error(`HTTP error! Status: ${resp.status}`);
