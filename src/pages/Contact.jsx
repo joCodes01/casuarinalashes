@@ -2,8 +2,15 @@ import React from "react";
 import Header from "/src/components/Header.jsx";
 import MidSection from "/src/components/MidSection.jsx";
 import Map from "/src/components/Map.jsx";
+import ContactForm from "/src/components/ContactForm.jsx";
 
 export function Contact() {
+  function handleSubmitContact(event) {
+    event.preventDefault();
+  }
+
+  const formData = new URLSearchParams();
+
   return (
     <main className="page-content">
       <Header
@@ -31,25 +38,8 @@ export function Contact() {
           </div>
           <div className="form-container">
             <h2>Online form</h2>
-            <form className="contact-form">
-              <div className="contact-form-inputs">
-                <div>
-                  <label for="contact-name">Name</label>
-                  <input type="text"></input>
-                </div>
-                <div>
-                  <label for="contact-email">Email</label>
-                  <input type="text"></input>
-                </div>
-                <div>
-                  <label for="contact-message">Message</label>
-                  <textarea></textarea>
-                </div>
-                <button className="button-style" type="submit">
-                  Send
-                </button>
-              </div>
-            </form>
+
+            <ContactForm />
           </div>
         </div>
       </section>
