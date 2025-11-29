@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
 import Menu from "./pages/Menu.jsx";
