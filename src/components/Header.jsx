@@ -6,7 +6,7 @@ export function Header({ title, tagline }) {
       <div className="headerContainer">
         <section className="headeritems">
           <h1>{title}</h1>
-          <h3>{tagline}</h3>
+          <p className="headertag">{tagline}</p>
         </section>
       </div>
     </div>

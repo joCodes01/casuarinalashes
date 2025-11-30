@@ -27,11 +27,11 @@ export function Contact() {
             <div className="call-text">
               <div>
                 <h2>Call or Text</h2>
-                <h3>0422 497 621</h3>
+                <p className="contact-details">0422 497 621</p>
               </div>
               <div>
                 <h2>Email</h2>
-                <h3>casuarinalashes@gmail.com</h3>
+                <p className="contact-details">casuarinalashes@gmail.com</p>
               </div>
             </div>
             <Map />

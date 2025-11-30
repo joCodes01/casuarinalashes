@@ -35,6 +35,13 @@ export function Blog() {
     <div className="blog-page">
       <div className="blog-container">
         <img src={blog.image} alt={blog.alttext} width="500px" />
+        <span className="back-link back-about">
+          <NavLink to="/about">
+            <FontAwesomeIcon size="1x" icon={faArrowLeft} />
+            Back to about page
+          </NavLink>
+        </span>
+
         <div className="blog-content">
           <h1>{blog.title} </h1>
           <div>{blog.longContent} </div>

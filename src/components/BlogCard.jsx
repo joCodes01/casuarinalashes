@@ -9,7 +9,7 @@ export function BlogCard({ title, content, image, alttext, readmore }) {
         <div className="blog-card-text-container">
           <h3>{title}</h3>
           <p>{content}</p>
-          <p>Read more...</p>
+          <p className="read-more">Read more...</p>
         </div>
       </div>
     </NavLink>

@@ -14,6 +14,7 @@ import { Navbar } from "./components/Navbar.jsx";
 import { Footer } from "./components/Footer.jsx";
 import "/src/assets/fonts/SourceSans3-VariableFont_wght.ttf";
 import "/src/assets/fonts/Allison-Regular.ttf";
+import { ScrollToTop } from "./components/ScrollToTop.jsx";
 
 import "/src/Styles.css";
 
@@ -21,6 +22,7 @@ function App() {
   return (
     <>
       <Router>
+        <ScrollToTop />
         <Navbar />
         <>
           <Routes>

@@ -5,8 +5,8 @@
   margin: 0;
   padding: 0;
 }
-
-/* * {
+/* 
+* {
   border: 1px solid pink;
 } */
 
@@ -56,6 +56,25 @@ ul li::marker {
 button {
   all: unset;
 }
+textarea,
+input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 1rem;
+  font-weight: 200;
+  resize: none;
+  color: rgb(88, 88, 88);
+}
+/* input {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-weight: 200;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+} */
 main {
   flex: 1;
 }
@@ -183,6 +202,12 @@ h4 {
   font-size: 1.3rem;
   font-weight: 200;
 }
+.headertag {
+  font-weight: 280;
+  color: var(--cl-mid);
+  font-size: 1.4rem;
+  margin-top: 1rem;
+}
 .info-center {
   color: var(--cl-text);
   font-size: 1.3rem;
@@ -249,9 +274,10 @@ p {
   padding: 6rem;
 }
 .menu-item-title {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 6fr 1fr;
+  /* flex-direction: row;
+  justify-content: space-between; */
 }
 .menu-item {
   width: 100%;
@@ -265,11 +291,13 @@ p {
   font-weight: var(--cl-menuitem-fontweight);
   font-size: 1.6rem;
   margin-bottom: 0.7rem;
+  text-align: left;
 }
 .menu-item-cost {
   font-size: 1.5rem;
   font-weight: 200;
   color: var(--cl-mid);
+  padding-left: 1rem;
 }
 .new-client-form-container {
   background-color: var(--cl-primary);
@@ -435,10 +463,18 @@ p {
 }
 .blog-card-text-container > p {
   color: var(--cl-darkest);
+  font-size: 1rem;
 }
 .blog-card-text-container > h3 {
   color: var(--cl-mid);
   margin-bottom: 1rem;
+  font-weight: 350;
+  font-size: 1.4rem;
+}
+.read-more {
+  font-weight: 400;
+  margin-top: 1rem;
+  color: var(--cl-mid);
 }
 
 .blog-page {
@@ -509,6 +545,9 @@ p {
   color: var(--cl-mid);
   display: flex;
   align-items: center;
+}
+.back-about {
+  margin: 1rem;
 }
 .service-explainer-container {
   margin-top: 12rem;
@@ -603,6 +642,11 @@ p {
   display: flex;
   flex-direction: column;
 }
+.contact-details {
+  font-size: 1.5rem;
+  color: var(--cl-darkest);
+  font-weight: 200;
+}
 #googlemap {
   width: 100%;
   border: 0;
@@ -618,6 +662,12 @@ p {
 }
 .contact-form-inputs > button {
   margin-top: auto;
+}
+.contact-form-inputs div label {
+  font-weight: 350;
+}
+.call-text h2 {
+  margin-bottom: 0;
 }
 
 /* Documents */
@@ -658,6 +708,9 @@ p {
   .contact-items {
     grid-template-columns: 1fr;
     margin-bottom: 6rem;
+  }
+  .call-text {
+    flex-direction: column;
   }
   .map-container {
     max-width: 100%;
@@ -704,14 +757,22 @@ p {
     font-weight: 300;
     font-size: 1.1rem;
   }
-  .menu-item-cost {
+  /* .menu-item-cost {
     display: none;
-  }
+  } */
 }
 
 @media screen and (max-width: 764px) {
   :root {
     --cl-main-padding: 1rem 1.5rem 1rem 1.5rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+  textarea,
+  input {
+    font-weight: 400;
+    color: rgb(30, 30, 30);
   }
   .info-card-grid-container {
     grid-template-columns: 1fr;
@@ -732,11 +793,12 @@ p {
     position: relative;
   }
   .midsection {
-    padding: 6rem 2rem;
+    padding: 6rem 1rem;
   }
   .headeritems {
     padding: 2rem;
   }
+
   .hello-lash-tech-items > img {
     max-width: 70%;
   }
@@ -763,20 +825,19 @@ p {
   }
   .blog-section-container {
     grid-template-columns: 1fr;
-    margin: 2rem;
+    margin: 2rem 0;
     padding-top: 6rem;
   }
   .accordian-container {
     padding: 6rem 2rem;
   }
-
-  .menu-item-cost-mobile {
+  /* .menu-item-cost-mobile {
     display: block;
     font-size: 1.5rem;
     font-weight: 300;
     color: var(--cl-mid);
     text-align: right;
-  }
+  } */
   .info-center {
     font-weight: 300;
   }
@@ -805,5 +866,38 @@ p {
   .footer nav {
     justify-content: center;
     align-content: center;
+  }
+  .form-container {
+    margin-left: 0;
+    padding-left: 0.2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  p {
+    font-size: 1.3rem;
+    font-weight: 350;
+  }
+  .headertag {
+    font-weight: 350;
+  }
+  .my-clients {
+    font-weight: 350;
+  }
+  .testimonial-text {
+    font-weight: 400;
+  }
+  .blog-card-text-container > p {
+    font-size: 1.2rem;
+  }
+  .menu-item-heading {
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+  .menu-item > p {
+    font-weight: 360;
+  }
+  .contact-details {
+    font-weight: 350;
   }
 }
