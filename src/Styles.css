@@ -471,6 +471,12 @@ p {
   font-weight: 350;
   font-size: 1.4rem;
 }
+.contra-wrapper-2 {
+  margin-top: 10rem;
+}
+/* .bc-h2 h2 {
+  margin-top: 5rem;
+} */
 .read-more {
   font-weight: 400;
   margin-top: 1rem;
@@ -512,12 +518,12 @@ p {
   margin-bottom: 4rem;
 }
 .blog-content h2 {
-  margin-top: 1.8rem;
+  margin-top: 4rem;
   font-size: 2rem;
   font-weight: 350;
 }
 .blog-content h3 {
-  margin: 1rem 0;
+  margin: 3rem 0 1rem 0;
   font-weight: 350;
   font-size: 1.4rem;
 }
@@ -899,5 +905,19 @@ p {
   }
   .contact-details {
     font-weight: 350;
+  }
+  .blog-content li {
+    font-size: 1.1rem;
+    font-weight: 350;
+  }
+  strong {
+    font-weight: 560;
+  }
+  .blog-content h3 {
+    font-weight: 400;
+    font-size: 1.5rem;
+  }
+  .blog-content h2 {
+    font-size: 2.2rem;
   }
 }
