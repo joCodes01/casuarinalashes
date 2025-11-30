@@ -9,7 +9,9 @@ export function AccessibilityStatement() {
           Casuarina Lashes ABN 18855021094 - Updated October 2025
         </p>
 
-        <h2>Accessibility Statement for https://casuarinalashes.com.au/</h2>
+        <h2>Accessibility Statement</h2>
+        <p>for https://casuarinalashes.com.au/</p>
+        <br></br>
         <p>
           ’Casuarina Lashes’ is committed to ensuring digital accessibility for
           people with disabilities. We are continually improving the user
