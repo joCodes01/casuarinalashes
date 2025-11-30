@@ -19,7 +19,7 @@ export function ContactForm() {
 
     try {
       const resp = await fetch(
-        "http://localhost:2487/lash-api/lash-contact-mailer.php",
+        "https://casuarinalashes.com.au/lash-mailer-api/lash-contact-mailer.php",
         {
           method: "POST",
           body: formData,

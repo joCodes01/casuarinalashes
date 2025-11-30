@@ -4,17 +4,41 @@ import logo from "/src/assets/images/CasuarinaLashesLogo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons/faBars";
 import { useState } from "react";
+import { useEffect } from "react";
+import { useRef } from "react";
 
 export function Navbar() {
   const [mobileNav, setMobileNav] = useState(false);
+  const mobileNavRef = useRef(null);
 
   function toggleMobileNav() {
     setMobileNav((prev) => !prev);
   }
 
   function closeMobileNav() {
-    setTimeout(toggleMobileNav, 300);
+    setMobileNav(false);
   }
+
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (
+        mobileNav &&
+        mobileNavRef.current &&
+        !mobileNavRef.current.contains(event.target)
+      ) {
+        setMobileNav(false);
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener("touchstart", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("touchstart", handleClickOutside);
+    };
+  }, [mobileNav]);
+
   return (
     <>
       <nav className="navbar">
@@ -61,7 +85,7 @@ export function Navbar() {
         </div>
 
         {mobileNav && (
-          <ul className="navbaritems-mobile">
+          <ul ref={mobileNavRef} className="navbaritems-mobile">
             <li>
               <NavLink onClick={closeMobileNav} to="/">
                 Home
