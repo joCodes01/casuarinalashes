@@ -5,10 +5,12 @@ export function InfoCardDataCenter() {
     <>
       <div className="info-card-grid-container">
         <div className="info-card">
-          <h2>Eyelash Extensions</h2>
+          <h2>
+            Eyelash <br className="hide-lash-item" />
+            Extensions
+          </h2>
           <p>
-            Eyelash enhancements for the sophisticated lady with a natural
-            aesthetic.
+            Lash enhancements for our beachside ladies with a natural aesthetic.
           </p>
         </div>
         <div className="info-card">

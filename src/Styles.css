@@ -600,6 +600,9 @@ p {
 
 .contact-section {
   padding: 5rem 12rem;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .contact-section h2 {
   margin-bottom: 0;
@@ -706,6 +709,12 @@ p {
 }
 .not-found a span:hover {
   background-color: var(--cl-mid);
+}
+
+@media screen and (max-width: 1200px) {
+  .contact-section {
+    max-width: 100%;
+  }
 }
 
 @media screen and (max-width: 842px) {
@@ -873,6 +882,8 @@ p {
   }
   .footer {
     min-height: 150px;
+    display: flex;
+    flex-direction: row;
   }
   .footer nav {
     justify-content: center;
@@ -937,5 +948,8 @@ p {
   }
   .contact-section h2 {
     font-weight: 400;
+  }
+  .hide-lash-item {
+    display: none;
   }
 }

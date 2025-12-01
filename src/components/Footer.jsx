@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import Digimojo from "/src/assets/images/digimojoLogo.png";
 
 export function Footer() {
   return (
@@ -19,6 +20,7 @@ export function Footer() {
           </li>
         </ul>
       </nav>
+      {/* <img src={Digimojo} alt="business logo" width="150px" /> */}
     </div>
   );
 }
