@@ -5,17 +5,16 @@ export function InfoCardDataCenter() {
     <>
       <div className="info-card-grid-container">
         <div className="info-card">
-          <h2>Elegant Eyelashes</h2>
+          <h2>Eyelash Extensions</h2>
           <p>
             Eyelash enhancements for the sophisticated lady with a natural
             aesthetic.
           </p>
         </div>
         <div className="info-card">
-          <h2>Classic Styles</h2>
+          <h2>Eyelash Lift/Lamination</h2>
           <p>
-            One-to-one lash extensions or lift & tint your own lashes – perfect
-            for coastal elegance.
+            Enhance your natural lashes with a long lasting lift / curl & tint.
           </p>
         </div>
         <div className="info-card">
