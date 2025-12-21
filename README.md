@@ -2,7 +2,7 @@
 
 This is a simple static business website built with React.js
 
-The purpose of this project is to learn the foundations of React.js and add to it over time whilst learning more.
+The purpose of this project is to learn the foundations of React.js then improve styles and add to it over time whilst learning more.
 
 I am doing eyelash services as a side business whilst learning to code.
 
