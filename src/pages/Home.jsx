@@ -21,7 +21,7 @@ export function Home() {
     <main className="page-content">
       <Header
         title="LASH LIFT & EXTENSIONS"
-        tagline="Enjoy elegant, effortless & naturally beautiful lashes from beach walks to evenings out."
+        tagline="Enjoy elegant, effortless & naturally beautiful lashes."
       />
       <MidSection layout="grid" />
       <section className="hello-lash-tech">

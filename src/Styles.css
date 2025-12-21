@@ -148,6 +148,9 @@ section {
   color: var(--cl-mid);
   background-color: var(--cl-lightest);
 }
+.mobile-nav-button-top {
+  z-index: 9999;
+}
 .footer {
   background-color: var(--cl-light);
 }
@@ -805,6 +808,7 @@ p {
     justify-content: space-between;
     padding: 1rem;
     align-items: center;
+    z-index: 9998;
   }
   .navbar-mobile {
     display: flex;
@@ -882,8 +886,8 @@ p {
   }
   .footer {
     min-height: 150px;
-    display: flex;
-    flex-direction: row;
+    /* display: flex;
+    flex-direction: row; */
   }
   .footer nav {
     justify-content: center;

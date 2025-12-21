@@ -1,21 +1,16 @@
 # Website rebuild with React.js (in progress)
 
-This is a rebuild of a basic Wordpress Elementor website with React.js.
+This is a simple static business website built with React.js
 
+The purpose of this project is to learn the foundations of React.js and add to it over time whilst learning more.
 
-It is in the early stages! You can see my progress here: https://jocodes01.github.io/casuarinalashes/ (COMING SOON)
+I am doing eyelash services as a side business whilst learning to code.
 
-The original basic website I built and am copying is here: https://casuarinalashes.com.au/
-
-currently adding components & content.
-Soon to be styled.
+The website can be seen here:
+https://casuarinalashes.com.au/
 
 ## Goals
 
 To put React skills into practice and become familiar with the basics.
 using Vite: learning correct workflow for images, fonts, forms styling etc.
 Add some subtle animations.
-
-To release myself from web host and page builder fees
-
-

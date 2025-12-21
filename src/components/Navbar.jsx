@@ -19,12 +19,34 @@ export function Navbar() {
     setMobileNav(false);
   }
 
+  // useEffect(() => {
+  //   function handleClickOutside(event) {
+  //     if (
+  //       mobileNav &&
+  //       mobileNavRef.current &&
+  //       !mobileNavRef.current.contains(event.target)
+  //     ) {
+  //       setMobileNav(false);
+  //     }
+  //   }
+
+  //   document.addEventListener("mousedown", handleClickOutside);
+  //   document.addEventListener("touchstart", handleClickOutside);
+
+  //   return () => {
+  //     document.removeEventListener("mousedown", handleClickOutside);
+  //     document.removeEventListener("touchstart", handleClickOutside);
+  //   };
+  // }, [mobileNav]);
+
   useEffect(() => {
     function handleClickOutside(event) {
       if (
         mobileNav &&
         mobileNavRef.current &&
-        !mobileNavRef.current.contains(event.target)
+        !mobileNavRef.current.contains(event.target) &&
+        toggleButtonRef.current &&
+        !toggleButtonRef.current.contains(event.target) // ignore clicks on button
       ) {
         setMobileNav(false);
       }
@@ -75,7 +97,11 @@ export function Navbar() {
             </NavLink>
           </div>
 
-          <button aria-label="open nav menu" onClick={toggleMobileNav}>
+          <button
+            className="mobile-nav-button-top"
+            aria-label="open nav menu"
+            onClick={toggleMobileNav}
+          >
             <FontAwesomeIcon
               className="hamburger-btn"
               size="2x"
