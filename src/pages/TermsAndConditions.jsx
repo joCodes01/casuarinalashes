@@ -61,6 +61,11 @@ export function TermsAndConditions() {
           Payment for products must be made online through the website:
           www.casuarinalashes.com.au.
         </p>
+        <p>
+          A deposit of 50% is required for online bookings. The deposit will be
+          refunded if at least 24 hours notice is given by the client for
+          cancellations.
+        </p>
 
         <h3>Arriving late to an appointment</h3>
         <p>

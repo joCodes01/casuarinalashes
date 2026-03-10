@@ -30,17 +30,20 @@
   --cl-welcomefont: "Allison-Regular";
   --cl-h2-section-heading: 2.5rem;
 
-  --cl-font-family-1: "SourceSans3", "Segoe UI", Roboto, "Helvetica Neue",
-    "Nimbus Sans", Arial, sans-serif;
+  --cl-font-family-1:
+    "SourceSans3", "Segoe UI", Roboto, "Helvetica Neue", "Nimbus Sans", Arial,
+    sans-serif;
 }
 @font-face {
   font-family: "SourceSans3";
-  src: local(SourceSans3),
+  src:
+    local(SourceSans3),
     url(/src/assets/fonts/SourceSans3-VariableFont_wght.ttf) format("truetype");
 }
 @font-face {
   font-family: "Allison-Regular";
-  src: local(Allison-Regular),
+  src:
+    local(Allison-Regular),
     url(/src/assets/fonts/Allison-Regular.ttf) format("truetype");
 }
 
@@ -108,6 +111,9 @@ section {
   padding: var(--cl-main-padding);
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+.footer {
+  margin-top: auto;
 }
 .navbaritems,
 .footeritems {
@@ -712,6 +718,38 @@ p {
 }
 .not-found a span:hover {
   background-color: var(--cl-mid);
+}
+
+/* Book */
+
+.booking-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+  margin-top: -3rem;
+}
+.booking-container li {
+  margin: 0.9rem 4rem;
+  font-weight: 300;
+}
+.booking-link {
+  background-color: var(--cl-mid);
+  color: white;
+  padding: 10px 40px;
+  border-radius: 20px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  margin-top: -4rem;
+  margin-bottom: 6rem;
+  max-width: fit-content;
+}
+.booking-link:hover {
+  background-color: var(--cl-accent);
+}
+.book-call {
+  margin-top: 2rem;
 }
 
 @media screen and (max-width: 1200px) {

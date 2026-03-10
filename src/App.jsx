@@ -8,6 +8,7 @@ import {
 import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
 import Menu from "./pages/Menu.jsx";
+import Book from "./pages/Book.jsx";
 import Contact from "./pages/Contact.jsx";
 import NewClientForm from "./pages/NewClientForm.jsx";
 import PrivacyPolicy from "./pages/PrivacyPolicy.jsx";
@@ -55,6 +56,14 @@ function App() {
               element={
                 <PageWrapper>
                   <Menu />
+                </PageWrapper>
+              }
+            />
+            <Route
+              path="/book"
+              element={
+                <PageWrapper>
+                  <Book />
                 </PageWrapper>
               }
             />

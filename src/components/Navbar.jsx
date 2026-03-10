@@ -81,6 +81,9 @@ export function Navbar() {
             <NavLink to="/menu">Menu</NavLink>
           </li>
           <li>
+            <NavLink to="/book">Book</NavLink>
+          </li>
+          <li>
             <NavLink to="/contact">Contact</NavLink>
           </li>
           <li>
@@ -125,6 +128,11 @@ export function Navbar() {
             <li>
               <NavLink onClick={closeMobileNav} to="/menu">
                 Menu
+              </NavLink>
+            </li>
+            <li>
+              <NavLink onClick={closeMobileNav} to="/book">
+                Book
               </NavLink>
             </li>
             <li>
