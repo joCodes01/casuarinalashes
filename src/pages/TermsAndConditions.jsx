@@ -4,12 +4,12 @@ export function TermsAndConditions() {
   return (
     <main className="page-content">
       <section className="document">
-        <h1 className="document-heading">TERMS & CONDITIONS</h1>
+        <h1 className="document-heading">Terms and Condiitions</h1>
         <p className="document-updated">
           Casuarina Lashes ABN 18855021094 - Updated January 2025
         </p>
 
-        <h2>Casuarina Lashes Terms & Conditions</h2>
+        <h2>Casuarina Lashes Terms and Conditions</h2>
 
         <p>
           Casuarina Lashes’ refers to ‘Joanna Wand’ trading as ‘Casuarina

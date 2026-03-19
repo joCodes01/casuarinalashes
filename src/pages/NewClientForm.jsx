@@ -6,7 +6,7 @@ import JotForm from "/src/components/JotForm.jsx";
 export function NewClientForm() {
   return (
     <main className="page-content">
-      <Header title="NEW CLIENT FORM" tagline="Welcome to Casuarina lashes." />
+      <Header title="New Client Form" tagline="Welcome to Casuarina lashes." />
       <MidSection
         title="Please complete this form before your first appointment"
         info="Thank you"

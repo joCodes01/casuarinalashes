@@ -4,8 +4,8 @@ function Book() {
   return (
     <>
       <Header
-        title="BOOK APPOINTMENT"
-        tagline="Book for your lash service and I'll see you soon! "
+        title="Book Appointment"
+        tagline="Online bookings open for Mondays and Tuesdays!"
       />
       <a
         className="booking-link"
@@ -23,7 +23,7 @@ function Book() {
           </li>
           <li>
             I'll text you the address once your first appointment is booked (you
-            can also find it in the confirmation email).
+            will also find it in the confirmation email).
           </li>
           <li>
             You must book for a product patch test at least 24 hours before your

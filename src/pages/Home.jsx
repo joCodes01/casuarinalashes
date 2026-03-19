@@ -20,7 +20,7 @@ export function Home() {
   return (
     <main className="page-content">
       <Header
-        title="LASH LIFT & EXTENSIONS"
+        title="Lash Lift & Extensions"
         tagline="Enjoy elegant, effortless & naturally beautiful lashes."
       />
       <MidSection layout="grid" />
@@ -31,14 +31,13 @@ export function Home() {
           </h2>
           <img src={photo} alt="photo of the eyelash technician smiling" />
           <p className="my-clients">
-            My clients favour a natural, classic & elegant style. I enjoy
-            creating gorgeous lashes which you feel could be your own.
+            My clients favour natural and elegant eyelash enhancements styles.
           </p>
         </div>
       </section>
       <section className="lash-gallery">
         <div className="service-container">
-          <h2 className="section-heading">SERVICES</h2>
+          <h2 className="section-heading">Services</h2>
           <div className="extensions">
             <h2>Classic eyelash extensions</h2>
             <div className="lash-grid">
@@ -104,7 +103,7 @@ export function Home() {
       </section>
       <section className="testimonial-section">
         <div className="testimonials-container">
-          <h2 className="section-heading">CLIENT TESTIMONIALS</h2>
+          <h2 className="section-heading">Client Testimonials</h2>
           <Testimonial
             content="I've never felt so beautiful as my wedding day thanks to you x x x."
             clientName="🩷 Joanna H"

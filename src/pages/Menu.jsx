@@ -6,7 +6,7 @@ export function Menu() {
   return (
     <main className="page-content">
       <Header
-        title="LASH SERVICE MENU"
+        title="Lash Service Menu"
         tagline="Lash Lift/Lamination & Eyelash Extensions."
       />
       <MidSection layout="menu" />

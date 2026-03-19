@@ -24,7 +24,7 @@
   --cl-maxwidth: 1100px;
   --cl-borderradius: 20px;
   --cl-cardpadding: 3rem;
-  --cl-boxshadow: 3px 3px 10px rgb(113, 125, 125);
+  --cl-boxshadow: 2px 2px 5px rgb(155, 170, 170);
   --cl-infocarddata-margin: 0 4rem 0 4rem;
   --cl-menuitem-fontweight: 350;
   --cl-welcomefont: "Allison-Regular";
@@ -40,6 +40,8 @@
     local(SourceSans3),
     url(/src/assets/fonts/SourceSans3-VariableFont_wght.ttf) format("truetype");
 }
+
+/* Script style font */
 @font-face {
   font-family: "Allison-Regular";
   src:
@@ -125,7 +127,7 @@ section {
 .footeritems li > * {
   margin-left: 1rem;
   color: var(--cl-accent);
-  font-weight: 300;
+  font-weight: 350;
 }
 .navbaritems-mobile {
   list-style-type: none;
@@ -183,18 +185,19 @@ section {
   text-align: center;
 }
 h1 {
-  font-size: 4rem;
-  font-weight: 200;
+  font-size: 3.5rem;
+  font-weight: 300;
+  color: #001b28;
 }
 h2 {
   font-weight: 325;
   font-size: 1.8rem;
-  color: var(--cl-mid);
+  color: #001b28;
   margin-bottom: 1.5rem;
 }
 h3,
 .my-clients {
-  font-weight: 280;
+  font-weight: 350;
   color: var(--cl-mid);
   font-size: 1.4rem;
 }
@@ -204,15 +207,15 @@ h4 {
   font-weight: 200;
 }
 .headertag {
-  font-weight: 280;
+  font-weight: 350;
   color: var(--cl-mid);
   font-size: 1.4rem;
   margin-top: 1rem;
 }
 .info-center {
-  color: var(--cl-text);
-  font-size: 1.3rem;
-  font-weight: 200;
+  color: var(--cl-mid);
+  font-size: 1.2rem;
+  font-weight: 350;
 }
 h5 {
   color: var(--cl-darkest);
@@ -224,22 +227,6 @@ p {
   font-weight: 300;
 }
 
-/* media queries for fonts */
-
-@media screen and (max-width: 935px) {
-  h1 {
-    font-size: 3rem;
-  }
-  h2 {
-    font-size: 1.4rem;
-  }
-  h3 {
-    font-size: 1.2rem;
-  }
-  h4 {
-    font-size: 1rem;
-  }
-}
 .midsection {
   background-color: var(--cl-primary);
   min-height: 300px;
@@ -296,7 +283,7 @@ p {
 }
 .menu-item-cost {
   font-size: 1.5rem;
-  font-weight: 200;
+  font-weight: 350;
   color: var(--cl-mid);
   padding-left: 1rem;
 }
@@ -345,6 +332,7 @@ p {
   font-family: var(--cl-welcomefont);
   font-size: 3.6rem;
   text-align: center;
+  color: var(--cl-mid);
 }
 .hello-lash-tech-items > img {
   max-width: 40%;
@@ -406,7 +394,6 @@ p {
 .lash-gallery .lift h2,
 .lash-gallery .extensions h2 {
   margin-top: 3rem;
-  margin-bottom: 3rem;
 }
 .testimonial-section {
   display: flex;
@@ -589,7 +576,7 @@ p {
   margin-top: 0.6rem;
 }
 .accordian-item {
-  border: 0.5px solid grey;
+  /* border: 0.5px solid grey; */
   margin: 0.3rem;
   padding: 1rem;
   background-color: rgb(241, 241, 241);
@@ -731,7 +718,7 @@ p {
 }
 .booking-container li {
   margin: 0.9rem 4rem;
-  font-weight: 300;
+  font-weight: 350;
 }
 .booking-link {
   background-color: var(--cl-mid);
@@ -749,7 +736,7 @@ p {
   background-color: var(--cl-accent);
 }
 .book-call {
-  margin-top: 2rem;
+  margin-top: 5rem;
 }
 
 @media screen and (max-width: 1200px) {
@@ -940,7 +927,10 @@ p {
 @media screen and (max-width: 600px) {
   p {
     font-size: 1.3rem;
-    font-weight: 350;
+    font-weight: 300;
+  }
+  .info-card h2 {
+    font-weight: 400;
   }
   .headertag {
     font-weight: 350;
@@ -962,7 +952,7 @@ p {
     font-weight: 360;
   }
   .contact-details {
-    font-weight: 350;
+    font-weight: 400;
   }
   .blog-content li {
     font-size: 1.1rem;
@@ -993,5 +983,22 @@ p {
   }
   .hide-lash-item {
     display: none;
+  }
+}
+
+/* media queries for fonts */
+
+@media screen and (max-width: 935px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+  h4 {
+    font-size: 1rem;
   }
 }

@@ -13,7 +13,10 @@ export function Contact() {
 
   return (
     <main className="page-content">
-      <Header title="CONTACT JOANNA" tagline="See my contact details below." />
+      <Header
+        title="Contact Joanna"
+        tagline="You're welcome to get in touch with any questions."
+      />
       <MidSection
         title="Remember to book your patch test before your lash service."
         info="Contact Joanna to book your complimentary patch test."

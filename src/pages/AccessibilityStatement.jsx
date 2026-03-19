@@ -4,7 +4,7 @@ export function AccessibilityStatement() {
   return (
     <main className="page-content">
       <section className="document">
-        <h1 className="document-heading">ACCESSIBILITY STATEMENT</h1>
+        <h1 className="document-heading">Accessibility Statement</h1>
         <p className="document-updated">
           Casuarina Lashes ABN 18855021094 - Updated October 2025
         </p>

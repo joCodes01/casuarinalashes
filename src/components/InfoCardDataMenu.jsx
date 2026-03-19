@@ -4,7 +4,7 @@ import MenuItem from "/src/components/MenuItem.jsx";
 export function InfoCardDataMenu({ title, cost, description }) {
   return (
     <div className="menu-container info-card">
-      <h2 className="section-heading">MENU</h2>
+      <h2 className="section-heading">Menu</h2>
       <MenuItem
         title="Eyelash extensions- classic set"
         cost="120"
@@ -35,7 +35,7 @@ export function InfoCardDataMenu({ title, cost, description }) {
         cost="110"
         description=""
       />
-      <MenuItem title="Eyelash extension removal" cost="35" description="" />
+      <MenuItem title="Eyelash extension removal" cost="40" description="" />
       <MenuItem
         title="Eyelash extension removal with a new set"
         cost="15"

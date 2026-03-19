@@ -9,7 +9,7 @@ export function About() {
     <>
       <main className="page-content">
         <Header
-          title="LASH ARTIST IN CASUARINA"
+          title="Lash Artist in Casuarina"
           tagline="Enjoy some time out to relax and unwind in comfort while I beautify your lashes!"
         />
 

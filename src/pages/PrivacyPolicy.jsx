@@ -4,7 +4,7 @@ export function PrivacyPolicy() {
   return (
     <main className="page-content">
       <section className="document">
-        <h1 className="document-heading">PRIVACY POLICY</h1>
+        <h1 className="document-heading">Privacy policy</h1>
         <p className="document-updated">
           Joanna Wand ABN 18855021094, www.casuarinalashes.com.au - Updated
           January 2025
