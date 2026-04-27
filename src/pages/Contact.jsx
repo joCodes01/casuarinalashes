@@ -3,6 +3,7 @@ import Header from "/src/components/Header.jsx";
 import MidSection from "/src/components/MidSection.jsx";
 import Map from "/src/components/Map.jsx";
 import ContactForm from "/src/components/ContactForm.jsx";
+import Jo from "/src/assets/images/jo-circle.png";
 
 export function Contact() {
   function handleSubmitContact(event) {
@@ -17,6 +18,15 @@ export function Contact() {
         title="Contact Joanna"
         tagline="You're welcome to get in touch with any questions."
       />
+      <div className="lash-circle-container">
+        <img
+          className="lash-circle"
+          src={Jo}
+          alt="classic eyelash extensions applied to natural eyelashes."
+          width="200px"
+          height="200px"
+        />
+      </div>
       <MidSection
         title="Remember to book your patch test before your lash service."
         info="Contact Joanna to book your complimentary patch test."

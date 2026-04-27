@@ -3,6 +3,7 @@ import Header from "/src/components/Header.jsx";
 import MidSection from "/src/components/MidSection.jsx";
 import BlogSection from "/src/components/BlogSection.jsx";
 import Accordian from "/src/components/Accordian.jsx";
+import lashCircle from "/src/assets/images/lash-circle.png";
 
 export function About() {
   return (
@@ -12,6 +13,15 @@ export function About() {
           title="Lash Artist in Casuarina"
           tagline="Enjoy some time out to relax and unwind in comfort while I beautify your lashes!"
         />
+        <div className="lash-circle-container">
+          <img
+            className="lash-circle"
+            src={lashCircle}
+            alt="classic eyelash extensions applied to natural eyelashes."
+            width="200px"
+            height="200px"
+          />
+        </div>
 
         <MidSection
           title="Lash trained at Pinewood Film Studios UK with high standards in service and application."

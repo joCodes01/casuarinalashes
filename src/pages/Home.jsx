@@ -2,6 +2,7 @@ import React from "react";
 import Header from "/src/components/Header.jsx";
 import MidSection from "/src/components/MidSection.jsx";
 import photo from "/src/assets/images/LashTech_round.png";
+import lashCircle from "/src/assets/images/lash-circle.png";
 import lashes01 from "/src/assets/images/eyelashExtensions_01.png";
 import lashes02 from "/src/assets/images/eyelashExtensions_02.png";
 import lashes03 from "/src/assets/images/eyelashExtensions_03.png";
@@ -23,6 +24,15 @@ export function Home() {
         title="Lash Lift & Extensions"
         tagline="Enjoy elegant, effortless & naturally beautiful lashes."
       />
+      <div className="lash-circle-container">
+        <img
+          className="lash-circle"
+          src={lashCircle}
+          alt="classic eyelash extensions applied to natural eyelashes."
+          width="200px"
+          height="200px"
+        />
+      </div>
       <MidSection layout="grid" />
       <section className="hello-lash-tech">
         <div className="hello-lash-tech-items">
