@@ -4,7 +4,7 @@ export function TermsAndConditions() {
   return (
     <main className="page-content">
       <section className="document">
-        <h1 className="document-heading">Terms and Condiitions</h1>
+        <h1 className="document-heading">Terms and Conditions</h1>
         <p className="document-updated">
           Casuarina Lashes ABN 18855021094 - Updated January 2025
         </p>
