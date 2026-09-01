@@ -17,5 +17,9 @@ Link to website: https://casuarinalashes.com.au/
 - Learn foundations of React.js including props, components, css styling in React, useState and images.
 - How to use React router
 
+## Images
+
 ![Landing page image for casuarina lashes](README_images/landingPage.png)
+<br>
+<br>
 ![Blog image for casuarina lashes](README_images/cards.png)
