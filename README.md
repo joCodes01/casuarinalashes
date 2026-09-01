@@ -9,7 +9,7 @@ I have a small side business offering eyelash services.
 - Contact form
 - Online appointment booking system
 
-## Linnk to website
+## Link to website
 
 https://casuarinalashes.com.au/
 
@@ -21,7 +21,4 @@ https://casuarinalashes.com.au/
 
 ## Images
 
-![Landing page image for casuarina lashes](README_images/landingPage.png)
-<br>
-<br>
-![Blog image for casuarina lashes](README_images/cards.png)
+![Website image for casuarina lashes](README_images/thumb_lashes.png)
