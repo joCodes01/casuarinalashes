@@ -9,7 +9,9 @@ I have a small side business offering eyelash services.
 - Contact form
 - Online appointment booking system
 
-Link to website: https://casuarinalashes.com.au/
+## Linnk to website
+
+https://casuarinalashes.com.au/
 
 ## Purpose of project
 
