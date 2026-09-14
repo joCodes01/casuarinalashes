@@ -326,6 +326,7 @@ p {
 }
 .infill-note {
   margin-bottom: 2rem;
+  text-align: left;
 }
 .new-client-form-container {
   background-color: var(--cl-primary);
