@@ -5,6 +5,9 @@
   margin: 0;
   padding: 0;
 }
+/* * {
+  border: 1px solid red;
+} */
 
 :root {
   --cl-lightest: #ffffff;
@@ -74,6 +77,29 @@ main {
 body {
   font-family: var(--cl-font-family-1);
 }
+table {
+  width: 100%;
+  margin-bottom: 0.1rem;
+}
+table,
+th,
+td {
+  border: 0.5px solid var(--cl-mid);
+  border-collapse: collapse;
+}
+
+th {
+  color: var(--cl-mid);
+  font-size: 1.3rem;
+  font-weight: 350;
+  text-align: left;
+  padding: 0.2rem;
+}
+td {
+  padding: 0.2rem;
+  text-align: left;
+}
+/*  */
 a {
   text-decoration: none;
 }
@@ -210,6 +236,11 @@ h3,
   color: var(--cl-mid);
   font-size: 1.4rem;
 }
+.infills-h3 {
+  width: 100%;
+  text-align: left;
+  margin-top: 1rem;
+}
 h4 {
   color: var(--cl-text);
   font-size: 1.3rem;
@@ -292,6 +323,9 @@ p {
   font-weight: 350;
   color: var(--cl-mid);
   padding-left: 1rem;
+}
+.infill-note {
+  margin-bottom: 2rem;
 }
 .new-client-form-container {
   background-color: var(--cl-primary);
