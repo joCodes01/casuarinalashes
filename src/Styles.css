@@ -476,7 +476,7 @@ p {
 #insta-widget {
   width: 100%;
   border: none;
-  height: 1000px;
+  height: 1200px;
 }
 
 /* About */
@@ -966,7 +966,7 @@ p {
 }
 @media screen and (max-width: 600px) {
   p {
-    /* font-size: 1.3rem; */
+    font-size: 1.3rem;
     font-weight: 300;
   }
   .info-card h2 {
@@ -988,9 +988,9 @@ p {
     font-size: 1.4rem;
     font-weight: 400;
   }
-  /* .menu-item > p {
+  .menu-item > p {
     font-weight: 360;
-  } */
+  }
   .contact-details {
     font-weight: 400;
   }
@@ -1023,6 +1023,10 @@ p {
   }
   .hide-lash-item {
     display: none;
+  }
+  .infill-note {
+    font-size: 1rem;
+    font-weight: 360;
   }
 }
 
