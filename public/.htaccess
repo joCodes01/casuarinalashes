@@ -18,6 +18,6 @@
   Header always set X-Content-Type-Options "nosniff"
   Header always set Referrer-Policy "strict-origin-when-cross-origin"
   Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
-  Header always set Content-Security-Policy "default-src 'self'; script-src 'self' https://*.jotform.com; frame-src 'self' data: https://form.jotform.com https://*.jotform.com; connect-src 'self' https://*.jotform.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://*.jotform.com"
+  Header always set Content-Security-Policy "default-src 'self'; script-src 'self' https://*.jotform.com; frame-src 'self' data: https://form.jotform.com https://*.jotform.com https://www.google.com; connect-src 'self' https://*.jotform.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://*.jotform.com"
   Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
 </IfModule>

@@ -32,7 +32,7 @@ export const FAQData = [
     id: "06",
     title: "Lash services if under 18 years of age?",
     content:
-      "I offer lashes for 16 years and over though if your 16-17 I will require parental consent. I might ask you for photo ID if you have the pleasure of a very youthful appearance!.",
+      "I offer lashes for 16 years and over though if your 16-17 I will require parental consent. I might ask you for photo ID if you look under 21.",
   },
   {
     id: "07",
