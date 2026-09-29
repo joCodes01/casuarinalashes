@@ -25,7 +25,7 @@ export function About() {
 
         <MidSection
           title="Lash trained at Pinewood Film Studios UK with high standards in service and application."
-          info="Qualified and experienced Beauty Specialist & Make-up Artist since 2002. "
+          info="Qualified and experienced Lash Artist. "
         />
 
         <BlogSection />
